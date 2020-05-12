@@ -10,9 +10,9 @@
 # --USAGE---
 #
 # -call from command line with this command:
-# > bash ~/src/bash_scripts/chromagnon_batch.sh path/to/image/directory/ 
+# > bash ~/src/bash_scripts/chromagnon_batch.sh path/to/image/directory/
 #  -note the trailing forward slash
-#  -directory structure is: 
+#  -directory structure is:
 #    path/image/images.tif
 #    path/cal/images.tif
 #    filenames are identical
@@ -43,6 +43,6 @@ done
  #ref="${indir::-5}""cal/""${d##*/}"
  #echo ref is $ref
  #echo "${indir::-5}"
- #echo processing "${d##*/}" 
+ #echo processing "${d##*/}"
  #chromagnon $d -R $ref -E dv
 #done
