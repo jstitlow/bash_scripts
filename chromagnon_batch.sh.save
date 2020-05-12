@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# shell script to batch align with chromagnon
+# Created 16 January, 2019
+#
+# ---REQUIREMENTS---
+#
+# -conda activate chromagnon
+# -first argument is directory "usr/people/path/to/dir/*.tif"
+# -second argument is reference file
+
+#for i in $1; do
+#  chromagnon ${i} -R $2
+#    echo "${i##*/}"
+#   echo "$i"
+#done
+
+indir = $@
+for d in indir; do
+ infile = "${d##*/}"
+ echo target is indir/infile
+ echo ref file is indir echo processing "${d##*/}" 
+# chromagnon d -R ../cal/$d -E dv
+done

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Create loop to select each .tiff file in a directory
+for file in ~/data/20160507_Actin5cFISH/*.tiff; do
+
+	# OMERO CLI command for importing files to a named dataset
+	# Creates new dataset if one doesn't already exist
+    /opt/OMERO.server-5.3.5-ice35-b73/bin/omero import $file -T Dataset:+name:\
+
+    # Specify group name 
+    --group 'davisgroup' \
+
+done
